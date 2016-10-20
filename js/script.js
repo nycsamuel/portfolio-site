@@ -10,6 +10,7 @@ $(document).ready(() => {
   // first.css('height', screenHeight);
   // second.css('height', screenHeight);
   // third.css('height', screenHeight);
+  third.fadeOut();
 
   /* this doesn't work with fat arrow function! */
 
@@ -21,7 +22,8 @@ $(document).ready(() => {
   }, { offset: '25%'});
   const thirdWaypoint = $('#third').waypoint(direction => {
     console.log('third point => ' + direction);
-  }, { offset: '25%'});
+    third.fadeIn();
+  }, { offset: '20%'});
 
 
 
