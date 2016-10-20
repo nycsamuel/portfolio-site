@@ -17,10 +17,10 @@ $(document).ready(() => {
     console.log('first point => ' + direction);
   });
   const secondWaypoint = $('#second').waypoint(direction => {
-    console.log('second poingt => ' + direction);
+    console.log('second point => ' + direction);
   }, { offset: '25%'});
   const thirdWaypoint = $('#third').waypoint(direction => {
-    console.log('third poingt => ' + direction);
+    console.log('third point => ' + direction);
   }, { offset: '25%'});
 
 
