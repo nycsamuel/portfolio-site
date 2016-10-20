@@ -5,9 +5,16 @@ body {
   height: 2000px;
 }
 
-div {
-  width: 200px;
-  height: 200px;
-  margin: 100px;
+#first, #second, #third {
+  margin: 10px;
+}
+
+#first {
   background-color: purple;
+}
+#second {
+  background-color: green;
+}
+#third {
+  background-color: yellow;
 }
