@@ -1,4 +1,13 @@
 body {
   margin: 0;
   background-color: orange;
+  text-align: center;
+  height: 2000px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  margin: 100px;
+  background-color: purple;
 }
