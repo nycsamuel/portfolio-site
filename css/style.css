@@ -1,10 +1,21 @@
 * {
-  font-family: 'Itim', cursive;
-}
-
-body {
   margin: 0;
   padding: 0;
+}
+
+.background-img {
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+#first-pg-background {
+  background: url('../assets/macbook-bg.jpg');
+  opacity: .7;
 }
 
 .page {
@@ -13,5 +24,63 @@ body {
 }
 
 .first-pg {
-  background-color: orange;
+  /*color: white;*/
+}
+
+#my-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.center {
+  width: 100%;
+  height: 1px;
+
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#name {
+  bottom: 70%;
+}
+#name h1 {
+  font-size: 5em;
+}
+#name p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.icons {
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 300px;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  transform: rotate(-13deg);
+}
+
+.icons img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#gmail {
+  width: 70px;
+}
+#twitter {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 9px;
+  right: 5px;
 }
