@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Samuel Na</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -19,21 +20,41 @@
       <p>~ Full Stack Developer ~</p>
     </div>
 
-    <div class="icons center">
-      <img src="assets/email-icon.png" alt="Gmail" id="gmail">
-      <img src="assets/github-icon.png" alt="Github" id="github">
-      <img src="assets/linkedin-icon.png" alt="Linkedin" id="linkedin">
-      <img src="assets/twitter-icon.png" alt="Twitter" id="twitter">
-    </div>
-
     <div class="center">
       <div id="arrow-down"></div>
     </div>
   </div>
 
   <div class="second-pg page">
-    <div class="background-img"></div>
+    <div class="background-img" id="second-pg-background"></div>
+
+    <div class="wrapper">
+      <div class="tabs">
+        <button class="about"><h3>About Me</h3></button>
+        <button class="list-projects"><h3>Projects</h3></button>
+      </div>
+
+      <div id="aboutme">
+
+      </div>
+
+      <div class="container">
+        <div class="projects" id="p1"></div>
+        <div class="projects" id="p2"></div>
+      </div>
+    </div>
   </div>
 
+  <div class="icons">
+    <a href="https://github.com/smna15">
+      <img src="assets/github-icon.png" alt="Github" id="github">
+    </a>
+    <a href="https://www.linkedin.com/in/smna90">
+      <img src="assets/linkedin-icon.png" alt="Linkedin" id="linkedin">
+    </a>
+    <a href="https://twitter.com/xsangmin">
+      <img src="assets/twitter-icon.png" alt="Twitter" id="twitter">
+    </a>
+  </div>
 </body>
 </html>
