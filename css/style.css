@@ -81,7 +81,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 40%;
-  padding: 10px;
+  padding: 5px;
   position: relative;
   opacity: .7;
   transition: .5s;
@@ -121,7 +121,7 @@ button {
   background-repeat: no-repeat;
   border: none;
   /*cursor: pointer;*/
-  outline: none;
+  /*outline: none;*/
 }
 
 .tabs button {
