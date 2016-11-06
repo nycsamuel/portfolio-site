@@ -136,3 +136,7 @@ button {
   -webkit-text-stroke-color: rgba(200, 200, 200, 0.7);
   transition: 1s;
 }
+
+.project-container {
+  display: none;
+}
