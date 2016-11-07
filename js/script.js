@@ -6,8 +6,8 @@ $(document).ready(() => {
   const projectBtn = $('#list-projects');
 
   aboutmeBtn.on('click', () => {
-    // console.log('about me clicked');
-    
+    console.log('about me clicked');
+    $(this).css('border-bottom', '2px solid black');
   });
 
 }); // doc ready

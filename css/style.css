@@ -83,7 +83,7 @@ body {
   border-radius: 40%;
   padding: 5px;
   position: relative;
-  opacity: .7;
+  opacity: .6;
   transition: .5s;
 }
 
@@ -116,15 +116,7 @@ body {
   top: 105%;
 }
 
-button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  /*cursor: pointer;*/
-  /*outline: none;*/
-}
-
-.tabs button {
+.tabs a {
   display: inline-block;
   font-size: 2em;
   /*border:  2px solid black;*/
@@ -132,10 +124,11 @@ button {
   margin: 5px;
   padding: 15px;
   color: rgba(10, 10, 10, 0.9);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgba(200, 200, 200, 0.7);
+  /*-webkit-text-stroke-width: 2px;*/
+  /*-webkit-text-stroke-color: rgba(200, 200, 200, 0.7);*/
   transition: 1s;
 }
+
 
 .project-container {
   display: none;
