@@ -129,7 +129,43 @@ body {
   transition: 1s;
 }
 
-
 .project-container {
   display: none;
+}
+
+.aboutme-container {
+  position: absolute;
+  top: 205%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 640px;
+  width: 90%;
+  text-align: center;
+  /*border: 1px solid black; */
+}
+
+.aboutme {
+  float: left;
+  border: 1px solid black; 
+  margin: 10px;
+}
+
+.col-1 {
+  width: 65%;
+  height: 100%;
+}
+
+.col-2 {
+  width: 30%;
+  margin: 5px;
+}
+
+#box2 {
+  height: 70%;
+}
+
+#box3 {
+  height: 30%;
 }
