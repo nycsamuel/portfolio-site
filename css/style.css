@@ -83,12 +83,14 @@ body {
 
 .icons img:hover {
   opacity: 1;
-  /*padding-bottom: 20px;*/
-
+  padding-bottom: 20px;
+/*  -webkit-animation: bouncing 1s linear 0 infinite ;
+  -o-animation: bouncing 2s linear 0 infinite ;
+  animation: bouncing 2s linear 0 infinite ;*/
 }
 
 @keyframes bouncing {
-  0%    { padding-bottom: 10px; }
+  0%    { padding-bottom: 0; }
   50%   { padding-bottom: 20px; }
   100%  { padding-bottom: 0; }
 }
