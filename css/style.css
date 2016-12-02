@@ -48,8 +48,8 @@ body {
 #name {
   bottom: 35%;
   color: rgba(10, 10, 10, 0.9);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgba(200, 200, 200, 0.7);
+/*  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgba(200, 200, 200, 0.7);*/
 }
 
 #name h1 {
