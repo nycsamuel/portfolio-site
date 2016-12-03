@@ -75,7 +75,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 40%;
-  padding: 5px;
+  padding: 25px;
   position: relative;
   opacity: .6;
   transition: .5s;
@@ -83,16 +83,16 @@ body {
 
 .icons img:hover {
   opacity: 1;
-  padding-bottom: 20px;
-/*  -webkit-animation: bouncing 1s linear 0 infinite ;
-  -o-animation: bouncing 2s linear 0 infinite ;
-  animation: bouncing 2s linear 0 infinite ;*/
+  animation: spin 1s linear 0s infinite;
+  animation: spin 1s linear 0s infinite;
+  -webkit-animation: spin 1s linear 0s infinite;
+  -o-animation: spin 1s linear 0s infinite;
 }
 
-@keyframes bouncing {
-  0%    { padding-bottom: 0; }
-  50%   { padding-bottom: 20px; }
-  100%  { padding-bottom: 0; }
+@keyframes spin {
+  0%    { transform: rotate(0deg); }
+  50%   { transform: rotate(360deg) }
+  100%  { transform: rotate(0deg); }
 }
 
 #gmail {
