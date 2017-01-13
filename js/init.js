@@ -2,6 +2,8 @@
   $(function(){
 
     $('.button-collapse').sideNav();
+    $('.slider').slider({full_width: false});
+    $('.collapsible').collapsible();
 
     const navAbout    = $('#navlink-navAbout');
     const navProjects = $('#navlink-navProjects');
@@ -17,6 +19,7 @@
       const projects = document.getElementById('projects');
       projects.scrollIntoView();
     });
+
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
