@@ -4,14 +4,16 @@
     $('.button-collapse').sideNav();
     $('.slider').slider({full_width: false});
     $('.collapsible').collapsible();
+    $(".dropdown-button").dropdown();
 
     const navAbout    = $('#navlink-navAbout');
     const navProjects = $('#navlink-navProjects');
 
     navAbout.on('click', () => {
       console.log('clicked navAbout');
-      const about = document.getElementById('about');
-      about.scrollIntoView();
+      // const about = document.getElementById('about');
+      // about.scrollIntoView();
+      window.scrollTo(0,0);
 
     });
     navProjects.on('click', () => {
