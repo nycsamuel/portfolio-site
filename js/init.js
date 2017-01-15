@@ -12,17 +12,30 @@
     $('.collapsible').collapsible();
     $(".dropdown-button").dropdown();
 
-    const navAbout    = $('#navlink-navAbout');
-    const navProjects = $('#navlink-navProjects');
+    const navAbout       = $('#navlink-navAbout');
+    const navAboutMob    = $('#navlink-navAbout-mob');
+    const navProjects    = $('#navlink-navProjects');
+    const navProjectsMob = $('#navlink-navProjects-mob');
 
     navAbout.on('click', () => {
       console.log('clicked navAbout');
       // const about = document.getElementById('about');
       // about.scrollIntoView();
       window.scrollTo(0,0);
-
     });
+    navAboutMob.on('click', () => {
+      console.log('clicked navAbout');
+      // const about = document.getElementById('about');
+      // about.scrollIntoView();
+      window.scrollTo(0,0);
+    });
+
     navProjects.on('click', () => {
+      console.log('clicked navProjects');
+      const projects = document.getElementById('projects');
+      projects.scrollIntoView();
+    });
+    navProjectsMob.on('click', () => {
       console.log('clicked navProjects');
       const projects = document.getElementById('projects');
       projects.scrollIntoView();
