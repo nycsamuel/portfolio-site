@@ -2337,7 +2337,7 @@ $(document).ready(function(){
 
               // If overlay does not exist, create one and if it is clicked, close menu
               if ($overlay.length === 0) {
-                $overlay = $('<div id="sidenav-overlay"></div>');
+                $overlay = $('<div id="sidenav-overlay" style="z-index: -111"></div>');
                 $overlay.css('opacity', 0).click( function(){
                   removeMenu();
                 });
@@ -2390,7 +2390,7 @@ $(document).ready(function(){
           }).bind('panend', function(e) {
 
             if (e.gesture.pointerType == "touch") {
-              var $overlay = $('<div id="sidenav-overlay"></div>');
+              var $overlay = $('<div id="sidenav-overlay" style="z-index: -111"></div>');
               var velocityX = e.gesture.velocityX;
               var x = e.gesture.center.x;
               var leftPos = x - options.menuWidth;
@@ -2472,7 +2472,7 @@ $(document).ready(function(){
 
             // Disable Scrolling
             var $body = $('body');
-            var $overlay = $('<div id="sidenav-overlay"></div>');
+            var $overlay = $('<div id="sidenav-overlay" style="z-index: -111"></div>');
             var oldWidth = $body.innerWidth();
             $body.css('overflow', 'hidden');
             $body.width(oldWidth);
