@@ -1,8 +1,10 @@
 /* Define by css vars */
 :root {
 	--bg-color: lightgray;
-	--nav-bar: purple;
-	--nav-items-bg: yellow;
+	--hamberger-menu: purple;
+	--nav-dropdown: yellow;
+	--dropdown-width: 10em;
+	--hover: rgba(155, 155, 155, .4);
 }
 
 body {
@@ -11,14 +13,13 @@ body {
 
 /* Nav icon - hamburger icon */
 .nav-btn {
-	margin: 2em;
-	float: right;
+	margin: 1em;
 	cursor: pointer;
 }
 .nav-bar {
 	width: 3.0em;
 	height: .45em;
-	background-color: var(--nav-bar);
+	background-color: var(--hamberger-menu);
 	display: block;
 	margin: 4px auto;
 	border-radius: 2px;
@@ -27,6 +28,10 @@ body {
 	transition        : all 0.5s ease-in-out;
 }
 .nav-btn.clicked > #nav-bar-2 {
+	-webkit-transform: rotate(180deg);
+	-ms-transform    : rotate(180deg);
+	-o-transform     : rotate(180deg);
+	transform        : rotate(180deg);
 	opacity: 0;
 }
 .nav-btn.clicked > #nav-bar-1 {
@@ -42,3 +47,39 @@ body {
 	transform        : translateY(-.75em) rotate(-45deg);
 }
 
+/* Menu */
+div.menu-container {
+	width: var(--dropdown-width);
+	margin: 0 auto;
+	display: none;
+	cursor: pointer;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition     : all 1s ease-in-out;
+	transition        : all 1s ease-in-out;
+}
+div.menu {
+	background-color: var(--nav-dropdown);
+	text-align: center;
+	box-shadow: 5px 5px 5px gray;
+}
+div.menu > a {
+	list-style: none;
+	text-decoration: none;
+	padding: .8em 0;
+	display: block;
+	border-bottom: 1px solid lightgray;
+}
+div.menu > a:hover {
+	background-color: var(--hover);
+}
+div.arrow {
+	width: 0;
+	height: 0;
+	margin: 0 auto;
+	border-left: 1em solid transparent;
+	border-right: 1em solid transparent;
+	border-bottom: 1em solid var(--nav-dropdown);
+}
+div.menu-container.show {
+	display: block;
+}
