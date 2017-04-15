@@ -1,0 +1,44 @@
+/* Define by css vars */
+:root {
+	--bg-color: lightgray;
+	--nav-bar: purple;
+	--nav-items-bg: yellow;
+}
+
+body {
+	background-color: var(--bg-color);
+}
+
+/* Nav icon - hamburger icon */
+.nav-btn {
+	margin: 2em;
+	float: right;
+	cursor: pointer;
+}
+.nav-bar {
+	width: 3.0em;
+	height: .45em;
+	background-color: var(--nav-bar);
+	display: block;
+	margin: 4px auto;
+	border-radius: 2px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition     : all 0.5s ease-in-out;
+	transition        : all 0.5s ease-in-out;
+}
+.nav-btn.clicked > #nav-bar-2 {
+	opacity: 0;
+}
+.nav-btn.clicked > #nav-bar-1 {
+	-webkit-transform: translateY(.75em) rotate(45deg);
+	-ms-transform    : translateY(.75em) rotate(45deg);
+	-o-transform     : translateY(.75em) rotate(45deg);
+	transform        : translateY(.75em) rotate(45deg);
+}
+.nav-btn.clicked > #nav-bar-3 {
+	-webkit-transform: translateY(-.75em) rotate(-45deg);	
+	-ms-transform    : translateY(-.75em) rotate(-45deg);
+	-o-transform     : translateY(-.75em) rotate(-45deg);
+	transform        : translateY(-.75em) rotate(-45deg);
+}
+
