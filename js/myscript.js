@@ -2,14 +2,15 @@ $(document).ready(() => {
 
 
 	console.log('loaded')
-	const navBtn = $('div.nav-btn')
-	const menu   = $('div.menu-container')
-
+	const navBtn   = $('div.nav-btn')
+	const dropdown = $('div.dropdown-container')
+	const sideDrawer = $('div.side-drawer')
 
 	navBtn.on('click', (event) => {
 		console.log('clicked nav')
 		navBtn.toggleClass('clicked')
-		menu.toggleClass('show')
+		// dropdown.toggleClass('show')
+		sideDrawer.toggleClass('drawer-active')
 	})
 
 	
