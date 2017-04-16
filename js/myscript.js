@@ -12,8 +12,13 @@ $(document).ready(() => {
 		// dropdown.toggleClass('show')
 		sideDrawer.toggleClass('drawer-active')
 	})
-
+	
+	// enable all tooltips
 	$('[data-toggle="tooltip"]').tooltip()
+
+	$('#scrolling').on('click', (event) => {
+		$('html,body').animate({ scrollTop: $("#div").offset().top }, 'slow')
+	})
 
 	
 })

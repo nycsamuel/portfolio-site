@@ -10,19 +10,28 @@
   <!-- Font Awesome Icons -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <!-- <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/myscript.js"></script>
 </head>
 <body>
-  <div class="row">
-  	<div class="nav-btn col-sm-2">
-      <span class="nav-bar" id="nav-bar-1"></span>
-  		<span class="nav-bar" id="nav-bar-2"></span>
-  		<span class="nav-bar" id="nav-bar-3"></span>
-  	</div>
+  
+  <div class="page-length">
+    <li><a id="scrolling" >click me to scroll</a></li>
   </div>
+
+  <div class="page-length">
+
+  <div class="scroll-position" id="div"></div>
+
+
+	<div class="nav-btn col-sm-2">
+    <span class="nav-bar" id="nav-bar-1"></span>
+		<span class="nav-bar" id="nav-bar-2"></span>
+		<span class="nav-bar" id="nav-bar-3"></span>
+	</div>
 
   <div class="dropdown-container col-sm-3">
     <div class="arrow"></div>
@@ -48,13 +57,16 @@
   <div class="project-item">
     <div class="project-box"></div>
     <div class="overlay">
-      <p class="project-description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut atque modi doloribus unde inventore, iste quam eius, commodi quas quis vero adipisci velit perferendis nam nihil labore laborum cumque consequatur!</p>
+      <div class="project-description">
+        <h3>Title</h3>
+        <p>Small description of the project. Maybe 2 or 3 lines.</p>
+      </div>
     </div>
   </div>
 
+  
 
-
-
+  </div>
 
   <footer class="navbar-fixed-bottom">
     <div class="container-fluid">
