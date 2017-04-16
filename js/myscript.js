@@ -13,5 +13,7 @@ $(document).ready(() => {
 		sideDrawer.toggleClass('drawer-active')
 	})
 
+	$('[data-toggle="tooltip"]').tooltip()
+
 	
 })

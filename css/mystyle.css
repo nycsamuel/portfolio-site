@@ -34,10 +34,14 @@ html, body {
 		background-color: var(--hamberger-menu);
 		display: block;
 		margin: 10px auto;
+		padding: 5px;
 		border-radius: 2px;
-		-webkit-transition: all 0.5s ease-in-out;
-		-o-transition     : all 0.5s ease-in-out;
-		transition        : all 0.5s ease-in-out;
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition     : all 0.3s ease-in-out;
+		transition        : all 0.3s ease-in-out;
+	}
+	.nav-btn.clicked {
+		/*box-shadow: 5px 5px 15px gray;*/
 	}
 	.nav-btn.clicked > #nav-bar-2 {
 		-webkit-transform: rotate(180deg);
@@ -144,4 +148,44 @@ html, body {
 		padding: .3em .7em;
 		color: var(--footer-color);
 	}
+	
 }	
+
+/* Project Overlay effect */
+.project-item {
+	position: relative;
+	width: 50%;
+	margin: 3em;
+}
+.project-box {
+	width: 100%;
+	height: 300px;
+	background-color: gray;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: cyan;
+	overflow: hidden;
+	width: 0;
+	height: 100%;
+	-webkit-transition: .5s ease;
+	-ms-transition    : .5s ease;
+	-o-transition     : .5s ease;
+	transition        : .5s ease;
+}
+.project-item:hover .overlay {
+	width: 100%;
+}
+.project-description {
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform    : translate(-50%, -50%);
+	-o-transform     : translate(-50%, -50%);
+	transform        : translate(-50%, -50%);
+}
