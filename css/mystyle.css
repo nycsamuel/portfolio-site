@@ -93,6 +93,9 @@ footer {
 		margin: 1em;
 		cursor: pointer;
 		z-index: 100;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 	.nav-bar {
 		width: 8.0em;
@@ -174,7 +177,7 @@ footer {
 		height: 100%;
 		z-index: 99;
 		background-color: var(--side-drawer);
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		overflow-x: hidden;
