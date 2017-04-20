@@ -256,6 +256,45 @@ html, body {
 	.side-drawer.drawer-active {
 		width: 30%;
 	}
+	/* Flip Cards */
+	.project {
+		width: 100px;
+		height: 100px;
+		background-color: cyan;
+		margin-left: 15em;
+
+		-webkit-transition: all 1.6s ease-in-out;
+		-ms-transition    : all 1.6s ease-in-out;
+		-o-transition     : all 1.6s ease-in-out;
+		transition        : all 1.6s ease-in-out;
+	}
+	.project-text {
+		opacity: 0;
+		text-align: center;
+		-webkit-transform: rotateY(180deg);
+		-ms-transform    : rotateY(180deg);
+		-o-transform     : rotateY(180deg);
+		transform        : rotateY(180deg);
+		-webkit-transition: all 1s ease-in-out;
+		-ms-transition    : all 1s ease-in-out;
+		-o-transition     : all 1s ease-in-out;
+		transition        : all 1s ease-in-out;
+
+	}
+	.project:hover {
+		background-color: yellow;
+		-webkit-transform: rotateY(180deg);
+		-ms-transform    : rotateY(180deg);
+		-o-transform     : rotateY(180deg);
+		transform        : rotateY(180deg);
+		-webkit-transition: all .8s ease-in-out;
+		-ms-transition    : all .8s ease-in-out;
+		-o-transition     : all .8s ease-in-out;
+		transition        : all .8s ease-in-out;
+	}
+	.project:hover .project-text {
+		opacity: 1;
+	}
 }
 @media only screen and (min-device-width: 1200px) {}
 
