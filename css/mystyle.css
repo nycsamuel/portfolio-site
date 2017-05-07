@@ -28,10 +28,10 @@ html, body {
 	width: 30%;
 	height: 400px;
 	margin-left: 10%;
-	-webkit-perspective: 200px;
-	-ms-perspective    : 200px;
-	-o-perspective     : 200px;
-	perspective        : 200px;
+	-webkit-perspective: 400px;
+	-ms-perspective    : 400px;
+	-o-perspective     : 400px;
+	perspective        : 400px;
 	-webkit-perspective-origin: 50% 50%;
 	-ms-perspective-origin    : 50% 50%;
 	-o-perspective-origin     : 50% 50%;
