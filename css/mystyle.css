@@ -83,7 +83,7 @@ html, body {
 }
 
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 599px) {
 	/* Footer */
 	footer {
 		background-color: gray;
@@ -93,13 +93,13 @@ html, body {
 		height: 9%;
 	}
 	.contact-me {
-		font-size: 2em;
-		padding: .7em .8em;
+		font-size: 1.5em;
+		padding: 1em .8em;
 		color: var(--footer-color);
 	}
 }	
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
 	/* Footer */
 	footer {
 		background-color: gray;
@@ -114,14 +114,11 @@ html, body {
 		color: var(--footer-color);
 	}
 }
-@media only screen and (min-width: 768px) {
-	/* Footer */
+@media only screen and (min-width: 900px) {
 	.contact-me {
-		font-size: 2em;
 		padding: .7em 2em;
 	}
 }
-@media only screen and (min-width: 1024px) {}
 @media only screen and (min-width: 1200px) {}
 
 
