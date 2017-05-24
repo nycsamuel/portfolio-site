@@ -26,6 +26,12 @@ $(document).ready(() => {
 	$('#scrolling').on('click', (event) => {
 		$('html,body').animate({ scrollTop: $("#div").offset().top }, 'slow')
 	})
-
+	
+	$('#tabs a').on('click', function (event) {
+	  event.preventDefault()
+	  let self = $(this)
+	  console.log('testing tab ', event.target)
+	  $(this).tab('show')
+	})
 	
 })
