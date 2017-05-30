@@ -1,7 +1,10 @@
 :root {
 	--background-color: rgba(250, 250, 250, 1);
 	--footer-bg-color: rgba(240, 240, 240, .9);
+	--tab-color: rgba(10, 10, 10, 1);
 	--icon-color: rgba(10, 10, 10, .6);
+	--font-h: 'PT Sans', sans-serif;
+	--font-p: 'Roboto', sans-serif;
 }
 
 body {
@@ -10,55 +13,56 @@ body {
 	background-color: var(--background-color);
 }
 #main {
-	width: 100%;
-	height: 10vh;
+	height: 80vh;
+	text-align: center;
+}
+.box {
+	width: 80%;
 }
 .row {
 	width: 80%;
 	margin: 0 auto;
+	font-family: var(--font-h);
 }
-.nav-tabs { 
-	text-align: center; 
-	display: table;
-	table-layout: fixed;
-	width: 100%;
+.nav-tabs {
+	display: flex;
+	justify-content: center;
 }
 .nav-tabs li {
-	display: table-cell;
 	list-style: none;
-	text-align: center;
-	padding: 20px 20px 25px 20px;
-	position: relative;
-	overflow: hidden;
 	cursor: pointer;
+	padding: 1em 2em;
+	font-size: 2em;
+	font-weight: bold;
+	opacity: .4;
 }
-.nav-tabs li:before {
-	z-index: -1;
-	position: absolute;
+.nav-tabs li.active { 
+	opacity: 1; 
+	-webkit-transition: .5s ease-in;
+			-ms-transition: .5s ease-in;
+			 -o-transition: .5s ease-in;
+					transition: .5s ease-in;
+}
+.nav-tabs li.active:before {
 	content: "";
-	width: 100%;
-	height: 120%;
-	top: 0;
-	left: 0;
-	background-color: rgba(255, 255, 255, .3);
-	/*background-color: rgba(10, 10, 10, .3);*/
-	-webkit-transform: translateY(100%);
-					transform: translateY(100%);
-	border-radius: 5px 5px 0 0;
+	position: absolute;
+	height: 10px;
+	margin-top: 50px;
+	background-color: var(--tab-color);
 }
-.nav-tabs li:hover li:before {
-	-webkit-transform: translateY(70%);
-					transform: translateY(70%);
-}
-.box {}
-
+.nav-tabs li:nth-child(1):before { width: 7%; }
+.nav-tabs li:nth-child(2):before { width: 9%; }
+.nav-tabs li:nth-child(3):before { width: 10%; }
 
 footer {
 	background-color: var(--footer-bg-color);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 10vh;
 	text-align: center;
 }
 footer a {
