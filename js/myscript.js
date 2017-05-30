@@ -1,37 +1,9 @@
 $(document).ready(() => {
+	console.log('hey');	
 
+	$('.nav-tabs li').on('click', function(event) {
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+  })
 
-	console.log('loaded')
-	const navBtn     = $('div.nav-btn')
-	const dropdown   = $('div.dropdown-container')
-	const sideDrawer = $('div.side-drawer')
-	const main       = $('div.main')
-
-	navBtn.on('click', (event) => {
-		console.log('clicked nav')
-		navBtn.toggleClass('clicked')
-		// dropdown.toggleClass('show')
-		sideDrawer.toggleClass('drawer-active')
-		if (sideDrawer.hasClass('drawer-active')) { 
-			main.css('margin-left', '30%' ) 
-		} else {
-			main.css('margin-left', '0' )
-		}
-
-	})
-	
-	// enable all tooltips
-	$('[data-toggle="tooltip"]').tooltip()
-
-	$('#scrolling').on('click', (event) => {
-		$('html,body').animate({ scrollTop: $("#div").offset().top }, 'slow')
-	})
-	
-	$('#tabs a').on('click', function (event) {
-	  event.preventDefault()
-	  let self = $(this)
-	  console.log('testing tab ', event.target)
-	  $(this).tab('show')
-	})
-	
 })
