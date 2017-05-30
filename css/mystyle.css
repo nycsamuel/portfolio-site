@@ -70,6 +70,7 @@ footer a {
 	font-size: 2em;
 	padding: 1em 1.5em;
 }
+footer a:hover { color: rgba(10, 10, 10, 1); }
 footer a:hover .fa-twitter {
 	transition: .2s ease-in;
 	animation: shake-it 1s infinite;
