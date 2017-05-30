@@ -9,25 +9,61 @@ body {
 	padding: 0;
 	background-color: var(--background-color);
 }
-
-.nav-tabs { text-align: center; }
-.nav-tabs li {
-	cursor: pointer;
-	display: inline-block;
-	list-style: none;
-	padding: 1em;
-	margin: 0 1em;
+#main {
+	width: 100%;
+	height: 10vh;
 }
+.row {
+	width: 80%;
+	margin: 0 auto;
+}
+.nav-tabs { 
+	text-align: center; 
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+.nav-tabs li {
+	display: table-cell;
+	list-style: none;
+	text-align: center;
+	padding: 20px 20px 25px 20px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.nav-tabs li:before {
+	z-index: -1;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 120%;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, .3);
+	/*background-color: rgba(10, 10, 10, .3);*/
+	-webkit-transform: translateY(100%);
+					transform: translateY(100%);
+	border-radius: 5px 5px 0 0;
+}
+.nav-tabs li:hover li:before {
+	-webkit-transform: translateY(70%);
+					transform: translateY(70%);
+}
+.box {}
 
 
 footer {
 	background-color: var(--footer-bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
 	text-align: center;
-	padding: 2em;
 }
 footer a {
 	color: var(--icon-color);
-	font-size: 1.5em;
+	font-size: 2em;
 	padding: 1em 1.5em;
 }
 footer a:hover .fa-twitter {
