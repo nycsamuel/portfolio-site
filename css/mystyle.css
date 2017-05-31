@@ -69,6 +69,8 @@ ul { margin: 0; padding: 0; }
 	align-items: center;
 }
 #main h1 { font-size: 3.2em; }
+#ma5n span { transition: .3s linear; }
+#main span:hover { font-size: 1.5em; }
 #main p { font-size: 1.3em; }
 #about {
 	width: 70%;
