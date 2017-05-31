@@ -15,10 +15,10 @@ body {
 ul { margin: 0; padding: 0; }
 .box {
 	width: 90%;
-	height: 71vh;
+	height: 72vh;
 	margin: 0 auto;
 	position: absolute;
-	top: 12%;
+	top: 13%;
 	left: 5%;
 	font-family: var(--font-p);
 	display: none;
