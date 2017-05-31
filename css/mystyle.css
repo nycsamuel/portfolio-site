@@ -68,6 +68,8 @@ ul { margin: 0; padding: 0; }
 	justify-content: center;
 	align-items: center;
 }
+#main h1 { font-size: 3.2em; }
+#main p { font-size: 1.3em; }
 #about {
 	width: 70%;
 	left: 15%;
