@@ -88,9 +88,63 @@ ul { margin: 0; padding: 0; }
 /* ===========
 	PROJECTS
 ============ */
-#projects {
+#projects .project-wrapper {
 	padding: 0 5em;
 }
+.flip-container {
+	-webkit-perspective: 800px;
+			-ms-perspective: 800px;
+			 -o-perspective: 800px;
+			 		perspective: 800px;
+	-webkit-perspective-origin: 50% 50%;
+			-ms-perspective-origin: 50% 50%;
+			 -o-perspective-origin: 50% 50%;
+			 		perspective-origin: 50% 50%;
+	-webkit-transform-origin: 50% top;
+			-ms-transform-origin: 50% top;
+			 -o-transform-origin: 50% top;
+			 		transform-origin: 50% top;
+	width: 25%;
+}
+.flipper { 
+	border: 2px solid var(--icon-color); 
+	-webkit-transition: transform 0.6s ease-in-out;
+			-ms-transition: transform 0.6s ease-in-out;
+			 -o-transition: transform 0.6s ease-in-out;
+			 		transition: transform 0.6s ease-in-out;
+	-webkit-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+			 -o-transform-style: preserve-3d;
+			 		transform-style: preserve-3d;
+	position: relative;
+}
+.flip-container .front, .flip-container .back {
+	-webkit-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			 -o-backface-visibility: hidden;
+					backface-visibility: hidden;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*border: 6px solid*/
+}
+.flip-container .front {
+	/*z-index: 2;	*/
+	-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			 -o-transform: rotateY(0deg);
+			 		transform: rotateY(0deg);
+}
+.flip-container .back {
+	/*z-index: 2;	*/
+	-webkit-transform: rotateY(180deg);
+			-ms-transform: rotateY(180deg);
+			 -o-transform: rotateY(180deg);
+			 		transform: rotateY(180deg);
+	position: relative;
+}
+
 
 /* ===========
 	ABOUT ME
