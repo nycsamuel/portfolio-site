@@ -29,6 +29,10 @@ ul { margin: 0; padding: 0; }
 .box.active {
 	display: block;
 }
+
+/* ===========
+	NAV TABS
+============ */
 .row {
 	background-color: var(--footer-bg-color);
 	-webkit-transition: .6s ease-in;
@@ -65,6 +69,10 @@ ul { margin: 0; padding: 0; }
 	background-color: var(--background-color);
 	font-size: 1.5em;
 }
+
+/* ===========
+	MAIN LANDING
+============ */
 #main {
 	width: 100%;
 	display: flex;
@@ -76,9 +84,17 @@ ul { margin: 0; padding: 0; }
 #main .name { transition: .3s ease-in; }
 #main span:hover { font-size: 1.5em; }
 #main p { font-size: 1.3em; }
+
+/* ===========
+	PROJECTS
+============ */
 #projects {
 	padding: 0 5em;
 }
+
+/* ===========
+	ABOUT ME
+============ */
 #about {
 	width: 80%;
 	left: 10%;
@@ -93,6 +109,10 @@ ul { margin: 0; padding: 0; }
 	position: relative;
 	left: 2em;
 }
+
+/* ===========
+	FOOTER
+============ */
 footer {
 	background-color: var(--footer-bg-color);
 	position: absolute;
@@ -131,6 +151,9 @@ footer a:hover .fa-envelope {
 	animation: shrink-it 1s infinite;
 }
 
+/* ===========
+	KEYFRAMES
+============ */
 @keyframes shake-it {
 	25% { transform: rotate(25deg); }
 	50% { transform: rotate(-25deg); }
@@ -156,6 +179,9 @@ footer a:hover .fa-envelope {
 	100% { transform: scaleX(1); }
 }
 
+/* ===========
+	MEDIA QUERIES
+============ */
 @media only screen and (max-width: 599px) {}
 @media only screen and (min-width: 600px) {}
 @media only screen and (min-width: 900px) {}
