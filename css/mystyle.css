@@ -90,6 +90,9 @@ ul { margin: 0; padding: 0; }
 ============ */
 #projects .project-wrapper {
 	padding: 0 5em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .flip-container {
 	-webkit-perspective: 800px;
@@ -104,9 +107,16 @@ ul { margin: 0; padding: 0; }
 			-ms-transform-origin: 50% top;
 			 -o-transform-origin: 50% top;
 			 		transform-origin: 50% top;
-	width: 25%;
+	width: 49%;
+	margin: 1em 0;
+	display: block;
 }
-.flipper { 
+.flip-container img { 
+	display: block; 
+	width: 100%;
+	height: 350px;
+}
+.flip-container .flipper { 
 	border: 2px solid var(--icon-color); 
 	-webkit-transition: transform 0.6s ease-in-out;
 			-ms-transition: transform 0.6s ease-in-out;
@@ -124,27 +134,37 @@ ul { margin: 0; padding: 0; }
 			 -o-backface-visibility: hidden;
 					backface-visibility: hidden;
 	width: 100%;
+	height: 350px;
 	position: absolute;
 	top: 0;
 	left: 0;
-	/*border: 6px solid*/
 }
 .flip-container .front {
-	/*z-index: 2;	*/
+	z-index: 2;	
 	-webkit-transform: rotateY(0deg);
 			-ms-transform: rotateY(0deg);
 			 -o-transform: rotateY(0deg);
 			 		transform: rotateY(0deg);
 }
 .flip-container .back {
-	/*z-index: 2;	*/
 	-webkit-transform: rotateY(180deg);
 			-ms-transform: rotateY(180deg);
 			 -o-transform: rotateY(180deg);
 			 		transform: rotateY(180deg);
 	position: relative;
+	width: 90%;
+	padding-right: 1em;
 }
-
+.flip-container .back ul li {
+	position: relative;
+	left: 1.5em;
+}
+.flip-container:hover .flipper {
+	-webkit-transform: rotateY(180deg);
+			-ms-transform: rotateY(180deg);
+			 -o-transform: rotateY(180deg);
+			 		transform: rotateY(180deg);
+}
 
 /* ===========
 	ABOUT ME
