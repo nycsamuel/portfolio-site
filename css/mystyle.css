@@ -153,8 +153,9 @@ ul { margin: 0; padding: 0; }
 			 -o-transform: rotateY(180deg);
 			 		transform: rotateY(180deg);
 	position: relative;
-	width: 90%;
-	padding-right: 1em;
+	box-sizing: border-box;
+	padding: 1em 2em;
+	overflow-x: hidden;
 }
 .flip-container .back ul li {
 	position: relative;
