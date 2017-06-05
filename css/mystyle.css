@@ -201,8 +201,9 @@ ul { margin: 0; padding: 0; }
 	-moz-columns: 2;
 }
 #tech-skills li {
-	position: relative;
-	left: 2em;
+	/*position: relative;
+	left: 2em;*/
+	margin-left: 2em;
 }
 
 /* ===========
@@ -289,6 +290,7 @@ footer a:hover .fa-envelope {
 	.nav-tabs li { 
 		font-size: .7em; 
 		padding: 8px 10px;
+		margin-left: 2em;
 	}
 	.nav-tabs li.active { font-size: 1em; }
 
@@ -334,7 +336,7 @@ footer a:hover .fa-envelope {
 		-webkit-columns: 1;
 		-moz-columns: 1;
 	}
-	#tech-skills li { position: initial; }
+	#tech-skills li { position: initial; margin-left: 2em;}
 	footer a { font-size: 1.5em; }
 }
 @media only screen and (min-width: 768px) {
@@ -358,6 +360,11 @@ footer a:hover .fa-envelope {
 		width: 40%;
 		margin: 1em 0;
 		display: block;
+	}
+	#tech-skills {
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
 	}
 }
 /*@media only screen and (min-width: 1200px) {}*/
