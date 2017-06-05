@@ -296,15 +296,13 @@ footer a:hover .fa-envelope {
 		text-align: center;
 		font-size: 2.5em;
 	}
-	#main > div > span.name { margin-left: 0 !important; }
-
 	#projects .project-wrapper {
 		display: block;
 		padding: 0;
 	}	
 	.flip-container {
 		width: 90%;
-		margin: 0 auto;
+		margin: 1em auto;
 	}
 	#about { padding: 0; }
 	#tech-skills {
@@ -313,10 +311,32 @@ footer a:hover .fa-envelope {
 		-moz-columns: 1;
 	}
 	#tech-skills li { position: initial; }
-	footer a {
-		font-size: 1em;
-	}
+	footer a { font-size: 1em; }
 }
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+	.tab-wrapper { width: 100%; }
+	.nav-tabs li {
+		padding: 6px 10px;
+	}
+	.box { height: 60vh; top: 18%; }
+	#main .myname { font-size: 2.5em; }
+	#projects .project-wrapper {
+		display: block;
+		padding: 0;
+	}	
+	.flip-container {
+		width: 90%;
+		margin: 1em auto;
+	}
+	#about { padding: 0; }
+	#tech-skills {
+		columns: 1;
+		-webkit-columns: 1;
+		-moz-columns: 1;
+	}
+	#tech-skills li { position: initial; }
+	footer a { font-size: 1.5em; }
+}
+@media only screen and (min-width: 768px) {}
 @media only screen and (min-width: 900px) {}
-@media only screen and (min-width: 1200px) {}
+/*@media only screen and (min-width: 1200px) {}*/
