@@ -337,6 +337,27 @@ footer a:hover .fa-envelope {
 	#tech-skills li { position: initial; }
 	footer a { font-size: 1.5em; }
 }
-@media only screen and (min-width: 768px) {}
-@media only screen and (min-width: 900px) {}
+@media only screen and (min-width: 768px) {
+	.nav-tabs li { padding: 1em 2em; }
+	#main .myname { font-size: 3.5em; }
+	.box { height: 80vh; top: 11%; }
+	footer a { font-size: 2em; }
+}
+@media only screen and (min-width: 900px) {
+	.tab-wrapper { width: 60%; }
+	.nav-tabs li { padding: 20px 20px 25px 20px; }
+	.nav-tabs li.active { font-size: 1.5em; }
+	.box { height: 77vh; }
+	#projects .project-wrapper {
+		padding: 0 5em;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.flip-container {
+		width: 40%;
+		margin: 1em 0;
+		display: block;
+	}
+}
 /*@media only screen and (min-width: 1200px) {}*/
