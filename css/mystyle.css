@@ -158,8 +158,9 @@ ul { margin: 0; padding: 0; }
 	overflow-x: hidden;
 }
 .flip-container .back ul li {
-	position: relative;
-	left: 1.5em;
+	/*position: relative;
+	left: 1.5em;*/
+	margin-left: 2em;
 }
 .flip-container:hover .flipper {
 	-webkit-transform: rotateY(180deg);
