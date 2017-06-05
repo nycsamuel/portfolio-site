@@ -80,7 +80,11 @@ ul { margin: 0; padding: 0; }
 	justify-content: center;
 	align-items: center;
 }
-#main > div { font-size: 3.2em; transition: .6s linear; }
+#main > .myname {
+ font-size: 3.2em; 
+ transition: .6s linear; 
+	display: inline-block;
+}
 #main .name { transition: .3s ease-in; }
 #main span:hover { font-size: 1.5em; }
 #main p { font-size: 1.3em; }
@@ -288,7 +292,7 @@ footer a:hover .fa-envelope {
 	}
 	.nav-tabs li.active { font-size: 1em; }
 
-	#main > div {
+	#main > .myname {
 		text-align: center;
 		font-size: 2.5em;
 	}
