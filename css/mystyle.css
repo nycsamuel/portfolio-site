@@ -80,7 +80,7 @@ ul { margin: 0; padding: 0; }
 	justify-content: center;
 	align-items: center;
 }
-#main h1 { font-size: 3.2em; transition: .6s linear; }
+#main > div { font-size: 3.2em; transition: .6s linear; }
 #main .name { transition: .3s ease-in; }
 #main span:hover { font-size: 1.5em; }
 #main p { font-size: 1.3em; }
@@ -168,22 +168,19 @@ ul { margin: 0; padding: 0; }
 			 -o-transform: rotateY(180deg);
 			 		transform: rotateY(180deg);
 }
-.project-link {
-	position: absolute;
-	width: 100px;
-	height: 50px;
-	right: 5%;
-	bottom: 5%;
-}
 .project-link a { 
 	text-decoration: none;
 	color: inherit;
 	padding: .5em .8em;
 	border-radius: 10px;
-	transition: .6s ease-in;
+	-webkit-transition: .6s ease-in;
+			-ms-transition: .6s ease-in;
+			 -o-transition: .6s ease-in;
+					transition: .6s ease-in;
 }
-.project-link a:hover {
-	background-color: rgba(15, 15, 15, 0.1);
+.project-link a:hover .icon-animate {
+	position: relative;
+	animation: action-call .6s infinite;
 }
 
 /* ===========
@@ -272,11 +269,45 @@ footer a:hover .fa-envelope {
 	50% { transform: scaleX(.25); }
 	100% { transform: scaleX(1); }
 }
+@keyframes action-call {
+	0% { left: 0; }
+	25% { left: 5px; }
+	50% { left: 10px; }
+	75% { left: 5px; }
+	100% { left: 0; }
+}
 
 /* ===========
 	MEDIA QUERIES
 ============ */
-@media only screen and (max-width: 599px) {}
+@media only screen and (max-width: 599px) {
+	.tab-wrapper { width: 100%; }
+	.nav-tabs li { 
+		font-size: .7em; 
+		padding: 8px 10px;
+	}
+	.nav-tabs li.active { font-size: 1em; }
+
+	#main > div {
+		text-align: center;
+		font-size: 2.5em;
+	}
+	#main > div > span.name { margin-left: 0 !important; }
+
+	#projects .project-wrapper {
+		display: block;
+		padding: 0;
+	}	
+	.flip-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+
+	footer a {
+		font-size: 1em;
+	}
+}
 @media only screen and (min-width: 600px) {}
 @media only screen and (min-width: 900px) {}
 @media only screen and (min-width: 1200px) {}
