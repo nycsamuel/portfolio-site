@@ -302,8 +302,13 @@ footer a:hover .fa-envelope {
 		width: 90%;
 		margin: 0 auto;
 	}
-
-
+	#about { padding: 0; }
+	#tech-skills {
+		columns: 1;
+		-webkit-columns: 1;
+		-moz-columns: 1;
+	}
+	#tech-skills li { position: initial; }
 	footer a {
 		font-size: 1em;
 	}
