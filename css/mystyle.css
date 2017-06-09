@@ -367,4 +367,10 @@ footer a:hover .fa-envelope {
 		-moz-columns: 2;
 	}
 }
-/*@media only screen and (min-width: 1200px) {}*/
+@media only screen and (min-width: 1200px) {
+	.flip-container {
+		width: 28%;
+		margin: 1em 0;
+		display: block;
+	}
+}
