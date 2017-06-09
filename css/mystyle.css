@@ -246,6 +246,10 @@ footer a:hover .fa-envelope {
 	transition: 1s ease-in;
 	animation: shrink-it 1s infinite;
 }
+footer a:hover .fa-paperclip {
+	transition: .3s linear;
+	animation: spin .3s infinite;
+}
 
 /* ===========
 	KEYFRAMES
@@ -280,6 +284,12 @@ footer a:hover .fa-envelope {
 	50% { left: 10px; }
 	75% { left: 5px; }
 	100% { left: 0; }
+}
+@keyframes spin {
+	25% { transform: rotate(90deg); }
+	50% { transform: rotate(180deg); }
+	75% { transform: rotate(270deg); }
+	100% { transform: rotate(360deg); }
 }
 
 /* ===========
