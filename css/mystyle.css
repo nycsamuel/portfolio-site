@@ -39,6 +39,7 @@ ul { margin: 0; padding: 0; }
 			-ms-transition: .6s ease-in;
 			 -o-transition: .6s ease-in;
 					transition: .6s ease-in;
+	animation: changeColor 3s ease-in-out infinite alternate;
 }
 .row:hover {
 	background-color: rgba(240, 240, 240, 1);
@@ -219,6 +220,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	animation: changeColor 3s ease-in-out infinite alternate;
 }
 footer a {
 	color: var(--icon-color);
@@ -250,6 +252,11 @@ footer a:hover .fa-paperclip {
 	transition: .3s linear;
 	animation: spin .3s infinite;
 }
+
+/* ===========
+	TYPED.JS
+============ */
+.typed-cursor { display: none; }
 
 /* ===========
 	KEYFRAMES
@@ -290,6 +297,15 @@ footer a:hover .fa-paperclip {
 	50% { transform: rotate(180deg); }
 	75% { transform: rotate(270deg); }
 	100% { transform: rotate(360deg); }
+}
+@keyframes changeColor {
+	from { background-color: var(--footer-bg-color); }
+	to { background-color: rgba(200, 200, 200, 1); }
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
 /* ===========
@@ -383,4 +399,7 @@ footer a:hover .fa-paperclip {
 		margin: 1em 0;
 		display: block;
 	}
+	.nav-tabs li { padding: 10px 10px 15px 10px; }
+	.nav-tabs li.active { font-size: 1.3em; }
+	footer a { font-size: 1.5em; }
 }
