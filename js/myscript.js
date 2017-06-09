@@ -11,7 +11,7 @@ $(document).ready(() => {
     callback: function(){ } // call function after typing is done
   });
   Typed.new('.description', {
-    strings: ['Full Stack Developer', 'Problem Solver', 'Who Is Always Learning'],
+    strings: ['Full Stack Developer', 'Problem Solver', 'Always Hungry To Learn'],
     typeSpeed: 30, // typing speed
     startDelay: 1500, // time before typing starts (ms)
     backDelay: 2000, // pause before backspacing

@@ -373,8 +373,8 @@ footer a:hover .fa-paperclip {
 }
 @media only screen and (min-width: 900px) {
 	.tab-wrapper { width: 60%; }
-	.nav-tabs li { padding: 20px 20px 25px 20px; }
-	.nav-tabs li.active { font-size: 1.5em; }
+	.nav-tabs li { padding: 10px 10px 15px 10px; }
+	.nav-tabs li.active { font-size: 1.3em; }
 	.box { height: 77vh; }
 	#projects .project-wrapper {
 		padding: 0 5em;
@@ -392,6 +392,7 @@ footer a:hover .fa-paperclip {
 		-webkit-columns: 2;
 		-moz-columns: 2;
 	}
+	footer a { font-size: 1.5em; }
 }
 @media only screen and (min-width: 1200px) {
 	.flip-container {
@@ -399,7 +400,4 @@ footer a:hover .fa-paperclip {
 		margin: 1em 0;
 		display: block;
 	}
-	.nav-tabs li { padding: 10px 10px 15px 10px; }
-	.nav-tabs li.active { font-size: 1.3em; }
-	footer a { font-size: 1.5em; }
 }
