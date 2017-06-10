@@ -3,16 +3,16 @@ $(document).ready(() => {
 
   // Typed.js
   Typed.new('.myname', {
-    strings: ['Samuel Na'],
-    typeSpeed: 30, // typing speed
+    strings: ['SAMUEL NA'],
+    typeSpeed: 100, // typing speed
     backDelay: 750, // pause before backspacing
     loop: false, // loop on or off (true or false)
     loopCount: false, // number of loops, false = infinite
-    callback: function(){ } // call function after typing is done
+    callback: function() {} // call function after typing is done
   });
   Typed.new('.description', {
     strings: ['Full Stack Developer', 'Problem Solver', 'Always Hungry To Learn'],
-    typeSpeed: 30, // typing speed
+    typeSpeed: 100, // typing speed
     startDelay: 1500, // time before typing starts (ms)
     backDelay: 2000, // pause before backspacing
     loop: true, // loop on or off (true or false)
@@ -22,26 +22,24 @@ $(document).ready(() => {
 
   $('.nav-tabs li').on('click', function(event) {
     // nav tabs
-    // console.log($(this).text())
     $(this).siblings().removeClass('active');
     $(this).addClass('active');
     
     // descriptions containers
-    // $('div.active').hide('slow');
     $('div.active').fadeOut('slow');
     $('div.active').removeClass('active');
     $(`div#${$(this).text().toLowerCase()}`).fadeIn('slow').addClass('active');
   });
   
-  let intervalId = setInterval(function() {
-    let name = $('span.name');
-    for (let i = 0; i < name.length; i++) {
-      let r = Math.round(Math.random()*255);
-      let g = Math.round(Math.random()*255);
-      let b = Math.round(Math.random()*255);
-      $(name[i]).css('color', `rgb(${r}, ${g}, ${b})`);
-    }  
-  }, 1000);  
+  // let intervalId = setInterval(function() {
+  //   let name = $('span.name');
+  //   for (let i = 0; i < name.length; i++) {
+  //     let r = Math.round(Math.random()*255);
+  //     let g = Math.round(Math.random()*255);
+  //     let b = Math.round(Math.random()*255);
+  //     $(name[i]).css('color', `rgb(${r}, ${g}, ${b})`);
+  //   }  
+  // }, 1000);  
   // let intervalId = setInterval(function() {
   //   let r = Math.round(Math.random()*255);
   //   let g = Math.round(Math.random()*255);
