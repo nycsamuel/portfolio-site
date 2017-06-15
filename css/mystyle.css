@@ -339,7 +339,14 @@ footer a:hover .fa-paperclip {
 		-moz-columns: 1;
 	}
 	#tech-skills li { position: initial; }
-	footer a { font-size: 1em; }
+	footer a { 
+		font-size: 1em; 
+		padding: .8em 1em;
+	}
+	.box {
+		top: 9%;
+		height: 81vh;
+	}
 }
 @media only screen and (min-width: 600px) {
 	.tab-wrapper { width: 100%; }
