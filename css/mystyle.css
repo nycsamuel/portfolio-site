@@ -112,7 +112,7 @@ ul { margin: 0; padding: 0; }
 			-ms-transform-origin: 50% top;
 			 -o-transform-origin: 50% top;
 			 		transform-origin: 50% top;
-	/*width: 49%;*/
+	width: 100%;
 	margin: 1em 0;
 	display: block;
 }
@@ -307,14 +307,37 @@ footer a:hover .fa-paperclip {
 	to { background-color: rgba(200, 200, 200, 1); }
 }
 @keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* ===========
 	MEDIA QUERIES
 ============ */
+
+@media only screen and (min-width: 600px) {
+	.nav-tabs li {
+		font-size: 1.8em;
+	}
+	.nav-tabs li.active { font-size: 2em; }
+	.box { 
+		top: 11%; 
+		height: 80vh;
+	}
+	#main, #about h3 { font-size: 2em; }	
+	#about p, #about li { font-size: 1.8em; }
+	footer a.btn { 
+		font-size: 1.5em; 
+		padding: .4em 1em;
+	}
+	#tech-skills { width: 90%; }
+	.flip-container {
+		width: 80%;
+	}
+}
+
+
 /*@media only screen and (max-width: 599px) {
 	.tab-wrapper { width: 100%; }
 	.nav-tabs li { 
