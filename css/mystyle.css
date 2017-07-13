@@ -16,10 +16,10 @@ body {
 ul { margin: 0; padding: 0; }
 .box {
 	width: 100%;
-	height: 85vh;
+	height: 82vh;
 	margin: 0 auto;
 	position: absolute;
-	top: 8%;
+	top: 10vh;
 	font-family: var(--font-p);
 	display: none;
 	overflow-x: hidden;
@@ -33,6 +33,9 @@ ul { margin: 0; padding: 0; }
 /* ===========
 	NAV TABS
 ============ */
+.main-container .row {
+	height: 10vh;
+}
 .row {
 	background-color: var(--footer-bg-color);
 	-webkit-transition: .6s ease-in;
@@ -47,8 +50,10 @@ ul { margin: 0; padding: 0; }
 .tab-wrapper {
 	font-family: var(--font-h);
 	margin: 0 auto;
+	height: 100%;
 }
 .nav-tabs {
+	border: none;
 	display: table;
 	table-layout: fixed;
 	margin: 0 auto;
@@ -67,7 +72,7 @@ ul { margin: 0; padding: 0; }
 }
 .nav-tabs li.active { 
 	opacity: 1;
-	background-color: var(--background-color);
+	/*background-color: var(--background-color);*/
 	font-size: 1.5em;
 }
 
@@ -211,6 +216,7 @@ ul { margin: 0; padding: 0; }
 	FOOTER
 ============ */
 footer {
+	height: 8vh;
 	background-color: var(--footer-bg-color);
 	position: absolute;
 	left: 0;
@@ -318,23 +324,28 @@ footer a:hover .fa-paperclip {
 
 @media only screen and (min-width: 600px) {
 	.nav-tabs li {
-		font-size: 1.8em;
+		padding: 15px 40px 10px 40px;
 	}
-	.nav-tabs li.active { font-size: 2em; }
-	.box { 
-		top: 11%; 
-		height: 80vh;
+	footer a.btn {
+		padding: 10px 25px;
 	}
-	#main, #about h3 { font-size: 2em; }	
-	#about p, #about li { font-size: 1.8em; }
-	footer a.btn { 
-		font-size: 1.5em; 
-		padding: .4em 1em;
+	#main, #projects { font-size: 1.3em; }
+	#about { font-size: 1.2em; }
+	.flip-container { width: 85%; }
+}
+
+@media only screen and (min-width: 900px) {
+	.nav-tabs li {
+		font-size: 1.5em;
+		padding: 25px 50px 20px 50px;
 	}
-	#tech-skills { width: 90%; }
-	.flip-container {
-		width: 80%;
+	.nav-tabs li.active { font-size: 1.8em; }
+	footer a.btn {
+		padding: 10px 25px;
 	}
+	#main, #projects { font-size: 1.3em; }
+	#about { font-size: 1.2em; }
+	.flip-container { width: 85%; }
 }
 
 
