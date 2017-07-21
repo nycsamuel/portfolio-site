@@ -33,6 +33,7 @@ ul { margin: 0; padding: 0; }
 /* ===========
 	NAV TABS
 ============ */
+.main-container { height: 92vh; }
 .main-container .row {
 	max-height: 10vh;
 	/*height: 10vh;*/
