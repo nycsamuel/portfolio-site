@@ -2,23 +2,23 @@ $(document).ready(() => {
 	console.log('hi :)');	
 
   // Typed.js
-  Typed.new('.myname', {
-    strings: ['SAMUEL NA'],
-    typeSpeed: 100, // typing speed
-    backDelay: 750, // pause before backspacing
-    loop: false, // loop on or off (true or false)
-    loopCount: false, // number of loops, false = infinite
-    callback: function() {} // call function after typing is done
-  });
-  Typed.new('.description', {
-    strings: ['Full Stack Developer', 'Problem Solver', 'Always Hungry To Learn'],
-    typeSpeed: 100, // typing speed
-    startDelay: 1500, // time before typing starts (ms)
-    backDelay: 2000, // pause before backspacing
-    loop: true, // loop on or off (true or false)
-    loopCount: null, // number of loops, false = infinite
-    //callback: function(){ } // call function after typing is done
-  });
+  // Typed.new('.myname', {
+  //   strings: ['SAMUEL NA'],
+  //   typeSpeed: 100, // typing speed
+  //   backDelay: 750, // pause before backspacing
+  //   loop: false, // loop on or off (true or false)
+  //   loopCount: false, // number of loops, false = infinite
+  //   callback: function() {} // call function after typing is done
+  // });
+  // Typed.new('.description', {
+  //   strings: ['Full Stack Developer', 'Problem Solver', 'Always Hungry To Learn'],
+  //   typeSpeed: 100, // typing speed
+  //   startDelay: 1500, // time before typing starts (ms)
+  //   backDelay: 2000, // pause before backspacing
+  //   loop: true, // loop on or off (true or false)
+  //   loopCount: null, // number of loops, false = infinite
+  //   //callback: function(){ } // call function after typing is done
+  // });
 
   $('.nav-tabs li').on('click', function(event) {
     // nav tabs
