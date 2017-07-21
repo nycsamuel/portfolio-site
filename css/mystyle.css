@@ -34,7 +34,8 @@ ul { margin: 0; padding: 0; }
 	NAV TABS
 ============ */
 .main-container .row {
-	height: 10vh;
+	max-height: 10vh;
+	/*height: 10vh;*/
 }
 .row {
 	background-color: var(--footer-bg-color);
@@ -216,7 +217,8 @@ ul { margin: 0; padding: 0; }
 	FOOTER
 ============ */
 footer {
-	height: 8vh;
+	max-height: 8vh;
+	/*height: 8vh;*/
 	background-color: var(--footer-bg-color);
 	position: absolute;
 	left: 0;
