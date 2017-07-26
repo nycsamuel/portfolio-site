@@ -5,9 +5,9 @@ $(document).ready(() => {
   // fix chrome for android's viewport height when address bar disappears
   $(window).on('resize', function(event) {
     $('footer').css({
-      'left': '0',
-      'right': '0',
-      'bottom': '0',
+      left: '0',
+      right: '0',
+      bottom: '0',
     });
   });
 
