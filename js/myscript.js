@@ -2,8 +2,8 @@ $(document).ready(() => {
 	console.log('hi :)');	
 
   // fix chrome for android's viewport height when address bar disappears
-  $(body).height($(window).height());
-
+  $('.main-container').height($(window).height());
+  
   // Typed.js
   Typed.new('.myname', {
     strings: ['SAMUEL NA'],
