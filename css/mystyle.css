@@ -34,12 +34,12 @@ ul { margin: 0; padding: 0; }
 /* ===========
 	NAV TABS
 ============ */
-.main-container { height: 90vh; }
-.main-container .row {
+.main-container { height: 100vh; }
+.main-container .row-container {
 	max-height: 10vh;
 	/*height: 10vh;*/
 }
-.row {
+.row-container {
 	background-color: var(--footer-bg-color);
 	-webkit-transition: .6s ease-in;
 			-ms-transition: .6s ease-in;
@@ -47,7 +47,7 @@ ul { margin: 0; padding: 0; }
 					transition: .6s ease-in;
 	animation: changeColor 3s ease-in-out infinite alternate;
 }
-.row:hover {
+.row-container:hover {
 	background-color: rgba(240, 240, 240, 1);
 }
 .tab-wrapper {
