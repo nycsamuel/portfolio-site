@@ -1,10 +1,16 @@
 $(document).ready(() => {
 	console.log('hi :)');	
+  
 
   // fix chrome for android's viewport height when address bar disappears
-  // $('.main-container').height($(window).height());
-  $('#test').text($(window).height());
-  
+  $(window).on('resize', function(event) {
+    $('footer').css({
+      'left': '0',
+      'right': '0',
+      'bottom': '0',
+    });
+  });
+
   // Typed.js
   Typed.new('.myname', {
     strings: ['SAMUEL NA'],

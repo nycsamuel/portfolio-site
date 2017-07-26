@@ -220,7 +220,7 @@ ul { margin: 0; padding: 0; }
 ============ */
 footer {
 	/*max-height: 8vh;*/
-	/*height: 8vh;*/
+	height: 8vh;
 	background-color: var(--footer-bg-color);
 	position: absolute;
 	left: 0;
