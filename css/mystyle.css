@@ -218,7 +218,7 @@ ul { margin: 0; padding: 0; }
 	FOOTER
 ============ */
 footer {
-	max-height: 8vh;
+	/*max-height: 8vh;*/
 	/*height: 8vh;*/
 	background-color: var(--footer-bg-color);
 	position: absolute;
@@ -325,7 +325,7 @@ footer a:hover .fa-paperclip {
 	MEDIA QUERIES
 ============ */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 600px) {
 	.nav-tabs li {
 		padding: 15px 40px 10px 40px;
 	}
