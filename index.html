@@ -2,168 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
 
-  <title>NYC Samuel</title>
-  <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Raleway" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/typed.js"></script>
+  <title>Samuel</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
   <script type="text/javascript" src="js/myscript.js"></script>
 </head>
 <body>
-  <div class="main-container">
-    <div class="row-container">
-      <div class="tab-wrapper">
-        <ul class="nav-tabs">
-          <li class="active">Main</li>
-          <li>Projects</li>
-          <li>About</li>
-        </ul>
-      </div>
+  <header class="landing d-flex flex-column justify-content-center">
+    <div class="container w-50 h-50 text-center">
+      <h1 class="headline">Samuel Na</h1>
+      <h3 class="tagline font-italic">Software Developer</h3>
     </div>
+  </header>
 
-    <div class="box-container">
-      <div class="box active" id="main">
-        <h1 class="myname"></h1>
-        <p class="description"></p>
-      </div>
-
-      <div class="box" id="projects">
-        <div class="project-wrapper">
-          <div class="flip-container" id="momentum-clone-react">
-            <div class="flipper">
-              <div class="front"><img src="assets/momentum-clone-react.png" alt="Tab Dashboard"></div>
-              <div class="back">
-                <h3>Momentum Clone</h3>
-                <p>Re-create the popular Chrome extension, Momentum, with React. </p>
-                <h3>TECHS</h3>
-                <ul>
-                  <li>REACT & REACT-ROUTER</li>
-                  <li>NODE & EXPRESS</li>
-                  <li>WEBPACK</li>
-                  <li>POSTGRESQL</li>
-                </ul>
-                <h5 class="project-link"><a href="https://github.com/nycsamuel/react-dashboard" target="_blank">GITHUB <span class="icon-animate fa fa-angle-double-right"></span></a></h5>
-              </div>
-            </div>
-          </div>
-          <div class="flip-container" id="plugin">
-            <div class="flipper">
-              <div class="front"><img src="assets/plugin.png" alt="Wordpress Plugin"></div>
-              <div class="back">
-                <h3>Affiliate Plugin</h3>
-                <p>WordPress plugin that creates simple and intuitive interface for content writers and transform the story into custom desgined template to increase call-to-action button clicks.</p>
-                <h3>TECHS</h3>
-                <ul>
-                  <li>PHP</li>
-                  <li>WORDPRESS</li>
-                  <li>MYSQL</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="flip-container" id="1-stop">
-            <div class="flipper">
-              <div class="front"><img src="assets/1-stop.png" alt="1 Stop"></div>
-              <div class="back">
-                <h3>1 STOP</h3>
-                <p>One app to rule them all!</p>
-                <p>Aggregate user's social media accounts, news, and weather in one dashboard.</p>
-                <h3>TECH</h3>
-                <ul><li>REACT NATIVE</li></ul>
-                <h5 class="project-link"><a href="https://github.com/nycsamuel/one-stop-commute" target="_blank">GITHUB <span class="icon-animate fa fa-angle-double-right"></span></a></h5>
-              </div>
-            </div>
-          </div>
-          <div class="flip-container" id="playlist">
-            <div class="flipper">
-              <div class="front"><img src="assets/playlist-search.png" alt="Playlist"></div>
-              <div class="back">
-                <h3>PLAYLIST</h3>
-                <p>Search songs by artist and albums then watch the music video</p>
-                <p>Save your favorite songs and chat with other on the site as well</p>
-                <h3>TECHS</h3>
-                <ul>
-                  <li>REACT</li>
-                  <li>SOCKET.IO</li>
-                  <li>NODE & EXPRESS</li>
-                  <li>POSTGRESQL</li>
-                </ul>
-                <h5 class="project-link"><a href="https://nstd--playlist.herokuapp.com/" target="_blank">LAUNCH <span class="icon-animate fa fa-angle-double-right"></span></a></h5>
-              </div>
-            </div>
-          </div>
-          <div class="flip-container" id="food-around-me">
-            <div class="flipper">
-              <div class="front"><img src="assets/food-around-me.jpg" alt="Food Around Me"></div>
-              <div class="back">
-                <h3>FOOD AROUND ME</h3>
-                <p>Search for restaurants with your voice!</p>
-                <p>Automatically uses your location to search for restaurants and displays Google Maps for the user's convenience.</p>
-                <h3>TECHS</h3>
-                <ul>
-                  <li>NODE & EXPRESS</li>
-                  <li>MONGODB</li>
-                  <li>YELP & GOOGLE MAPS API</li>
-                </ul>
-                <h5 class="project-link"><a href="https://food-around-me.herokuapp.com/" target="_blank">LAUNCH <span class="icon-animate fa fa-angle-double-right"></span></a></h5>
-              </div>
-            </div>
-          </div>
-          <div class="flip-container" id="catchem-all">
-            <div class="flipper">
-              <div class="front"><img src="assets/catchem-all.png" alt="Gotta Catchem All"></div>
-              <div class="back">
-                <h3>GOTTA CATCHEM ALL</h3>
-                <p>Dodge fireballs from angry Charzard while catching Pokemons!</p>
-                <h3>TECHS</h3>
-                <ul>
-                  <li>HTML & CSS</li>
-                  <li>JAVASCRIPT & JQUERY (DOM manipulation and collision detection)</li>
-                </ul>
-                <h5 class="project-link"><a href="https://nycsamuel.github.io/Gotta-Dodge-Them-All/" target="_blank">LAUNCH <span class="icon-animate fa fa-angle-double-right"></span></a></h5>
-              </div>
-            </div>
-          </div>
+  <section class="projects bg-light p-5">
+    <div class="row no-gutters justify-content-center">
+      <div class="project-wrapper col-lg-5 m-3">
+        <div class="overlay overlay-bg">
+          <h2 class="title">Momentum Clone</h2>
+          <p class="mb-0"></p>
         </div>
+        <div class="project" id="momentum"></div>
       </div>
-
-      <div class="box" id="about">
-        <h3>WHO I AM</h3>
-        <p>I’ve always been drawn to figure out solutions to puzzles. As a software developer, I enjoy analyzing problems and sharing creative solutions to improve both myself and those around me. I like to focus on creating simple-yet-elegant solutions to engage the users. </p>
-        <h3>MORE ABOUT ME</h3>
-        <p>I like to decompress with games (DOTA and Starcraft). When I am not coding, I like to hike, indoor rock climbing, and swimming. I believe healthy mind requires healthy body.</p>
-        <p>I hit the gym regularly, which helps me focus and concentrate with my tasks. Lastly, I’m a strong believer of never leaving food behind. </p>
-        <h3>TECHNICAL SKILLS</h3>
-        <ul id="tech-skills">
-          <li>JavaScript</li>
-          <li>Ruby / Rails</li>
-          <li>ReactJS & React Native</li>
-          <li>Node/Express</li>
-          <li>HTML 5/CSS 3</li>
-          <li>PostgreSQL/MongoDB</li>
-          <li>PHP & WordPress / MYSQL</li>
-        </ul>
+      <div class="project-wrapper col-lg-5 m-3">
+        <div class="overlay overlay-bg">
+          <h2 class="title">Food Around Me</h2>
+          <p class="mb-0"></p>
+        </div>
+        <div class="project" id="food-aroundme"></div>
+      </div>
+    <!-- </div>
+    <div class="row no-gutters justify-content-center"> -->
+      <div class="project-wrapper col-lg-5 m-3">
+        <div class="overlay overlay-bg">
+          <h2 class="title">One Stop</h2>
+          <p class="mb-0"></p>
+        </div>
+        <div class="project" id="onestop"></div>
+      </div>
+      <div class="project-wrapper col-lg-5 m-3">
+        <div class="overlay overlay-bg">
+          <h2 class="title">Playlist</h2>
+          <p class="mb-0"></p>
+        </div>
+        <div class="project" id="playlist"></div>
       </div>
     </div>
-
-    <footer class="row-container">
-        <a href="mailto:samuelnasm@gmail.com" target="_blank" class="contact-me btn btn-social-icon btn-google" data-toggle="tooltip" data-placement="top" title="samuelnasm@gmail.com"><span class="fa fa-envelope"></span></a>
-        <a href="https://www.linkedin.com/in/nycsamuel/" target="_blank" class="contact-me btn btn-social-icon btn-linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"><span class="fa fa-linkedin"></span></a>
-        <a href="https://github.com/nycsamuel" target="_blank" class="contact-me btn btn-social-icon btn-github" data-toggle="tooltip" data-placement="top" title="Github"><span class="fa fa-github"></span></a>
-        <a href="https://twitter.com/nycsamuel" target="_blank" class="contact-me btn btn-social-icon btn-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a>
-        <a class="contact-me btn btn-social-icon btn-resume" href="assets/SamuelNaResume.pdf" data-toggle="tooltip" data-placement="top" title="Resume" target="_blank"><span class="fa fa-paperclip"></span></a>
-    </footer>
-  </div>
+  </section>
 </body>
 </html>
