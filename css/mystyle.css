@@ -12,10 +12,9 @@ html, body {
 }
 
 .headline, .tagline { font-weight: 700; }
-
 .headline { font-size: 4rem; }
 
-.overlay-bg { 
+.overlay-bg {
 	background: #1d809f;
 	border: 2px solid #343a40;
 }
@@ -29,7 +28,7 @@ html, body {
 	padding: 2em;
 	height: 100%;
 	width: 100%;
-	transition: visibility 0s, opacity 0.5s linear;
+	transition: visibility 0s, opacity 0.7s linear;
 }
 
 .projects {
@@ -37,10 +36,19 @@ html, body {
 	width: 100%;
 }
 
+.project-wrapper, .project, .overlay {
+	min-height: 420px;
+	min-width: 420px;
+	max-height: 420px;
+	max-width: 420px;
+}
+
 .project {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	border: 2px solid #343a40;
 	height: 100%;
-	min-height: 480px;
 	width: 100%;
 }
 
@@ -51,45 +59,19 @@ html, body {
 }
 
 .overlay .title {
-	color: #fff;
-	/* font-size: .8rem; */
 	font-weight: 700;
 	line-height: 1.2;
+	margin-bottom: 2rem;
 	text-transform: uppercase;
 }
 
-.overlay .caption {
-	
+.aboutme {
+	background-color: #1d809f;
 }
 
 /* PROJECTS */
-#onestop {
-	background-image: url('../assets/1-stop.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#food-aroundme {
-	background-image: url('../assets/food-around-me.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#momentum {
-	background-image: url('../assets/momentum-clone-react.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#playlist {
-	background-image: url('../assets/playlist-search.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#omada {
-	background-image: url('../assets/plugin.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
+#onestop { background-image: url('../assets/1-stop.png'); }
+#food-aroundme { background-image: url('../assets/food-around-me.jpg'); }
+#momentum { background-image: url('../assets/momentum-clone-react.png'); }
+#playlist { background-image: url('../assets/playlist-search.png'); }
+#omada { background-image: url('../assets/plugin.png'); }
